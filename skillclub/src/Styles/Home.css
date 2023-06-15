@@ -1,5 +1,143 @@
-.homepage{
-    width:80%;
-    margin:auto;
-    border:1px solid red;
+#home{
+    margin-top: -100px;
+    width:100%;
+    height:700px;
+    /* border:1px solid red; */
 }
+.homepage{
+    max-width: 100vw;
+    max-height:100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url();
+   
+}
+.loginsign{
+    width:550px;
+   margin-top: 120px;
+    /* border:1px solid red; */
+    margin-left:200px;
+    position:absolute;
+    z-index: 1;
+}
+
+#banner{
+    width:600px;
+    height:600px;
+    margin-left:60%;
+    margin-top:3px;
+}
+.homepageIntro{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    word-wrap:wrap;
+    text-align: justify;
+    color:#0f615e;
+}
+.homepageIntro:first-letter{
+  font-size: 30px;
+  color:#0a827e;
+}
+/* .Homebutton{
+    width:250px;
+    height:30px;
+    border-radius: 3px;
+    display:block;
+} */
+.Homepagebutton {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: #32b0c8;
+    padding: 1em 2em;
+    border: none;
+    border-radius: .6rem;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .Homepagebutton span:not(:nth-child(6)) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 30px;
+    width: 30px;
+    background-color: #0c66ed;
+    border-radius: 50%;
+    transition: .6s ease;
+  }
+  
+  .Homepagebutton span:nth-child(6) {
+    position: relative;
+  }
+  
+  .Homepagebutton span:nth-child(1) {
+    transform: translate(-3.3em, -4em);
+  }
+  
+  .Homepagebutton span:nth-child(2) {
+    transform: translate(-6em, 1.3em);
+  }
+  
+  .Homepagebutton span:nth-child(3) {
+    transform: translate(-.2em, 1.8em);
+  }
+  
+  .Homepagebutton span:nth-child(4) {
+    transform: translate(3.5em, 1.4em);
+  }
+  
+  .Homepagebutton span:nth-child(5) {
+    transform: translate(3.5em, -3.8em);
+  }
+  
+  .Homepagebutton:hover span:not(:nth-child(6)) {
+    transform: translate(-50%, -50%) scale(4);
+    transition: 1.5s ease;
+  }
+    
+#h{
+    color:red;
+}
+.Homebutton {
+    font-size: 18px;
+    color: #878787;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+    display:block;
+  }
+  
+  .Homebutton:focus,
+  .Homebutton:hover {
+    color: #0a827e;
+  }
+  
+  .Homebutton:focus:after,
+  .Homebutton:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  .Homebutton:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #000000;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
