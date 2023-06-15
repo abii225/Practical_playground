@@ -23,7 +23,6 @@ const Navbar = () => {
   return (
     <>
     <div style={{width:"50%",
-              border:"1px solid red",
               display:"flex",
               justifyContent:"space-around",
               float:"right"}}>

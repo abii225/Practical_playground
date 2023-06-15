@@ -10,16 +10,16 @@ import Signup from '../Pages/Signup'
 
 const Allroutes = () => {
   return (
-   
+   <div>
     <Routes>
-       <Route path="/" ele={<Home/>}></Route>
-       <Route path="/courses" ele={<Courses/>}></Route>
-       <Route path="/leaderboard" ele={<Leaderboard/>}></Route>
-       <Route path="/coursedetails" ele={<SingleCourse/>}></Route>
-       <Route path="/login" ele={<Login/>}></Route>
-       <Route path="/signup" ele={<Signup/>}></Route>
+       <Route path="/" element={<Home/>}></Route>
+       <Route path="/courses" element={<Courses/>}></Route>
+       <Route path="/leaderboard" element={<Leaderboard/>}></Route>
+       <Route path="/coursedetails" element={<SingleCourse/>}></Route>
+       <Route path="/login" element={<Login/>}></Route>
+       <Route path="/signup" element={<Signup/>}></Route>
     </Routes>
-    
+    </div>
   )
 }
 
