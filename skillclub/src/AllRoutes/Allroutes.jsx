@@ -7,7 +7,8 @@ import Leaderboard from '../Pages/Leaderboard'
 import SingleCourse from '../Pages/SingleCourse'
 import Login from '../Pages/Login'
 import Signup from '../Pages/Signup'
-
+import Lecture from '../Pages/Lecture'
+import Profile from '../Pages/Profile'
 const Allroutes = () => {
   return (
    <div>
@@ -15,9 +16,11 @@ const Allroutes = () => {
        <Route path="/" element={<Home/>}></Route>
        <Route path="/courses" element={<Courses/>}></Route>
        <Route path="/leaderboard" element={<Leaderboard/>}></Route>
-       <Route path="/coursedetails" element={<SingleCourse/>}></Route>
+       <Route path="/coursedetails/:name" element={<SingleCourse/>}></Route>
+       <Route path="/coursedetails/https://www.youtube.com/embed/:ytube" element={<Lecture/>}></Route>
        <Route path="/login" element={<Login/>}></Route>
        <Route path="/signup" element={<Signup/>}></Route>
+       <Route path="/profile" element={<Profile/>}></Route>
     </Routes>
     </div>
   )

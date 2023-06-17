@@ -1,0 +1,38 @@
+#singleCourse{
+    border:1px solid red;
+    width:80%;
+    margin:auto;
+}
+.coursetitle{
+    width:100%;
+    height:200px;
+    border:1px solid green;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.courseimage{
+    width:200px;
+    height:200px;
+    border:1px solid black;
+}
+.courseimage>img{
+    width:100%;
+    height:100%;
+    
+}
+#lecture{
+    border:1px solid red;
+    width:50%;
+    margin:auto;
+}
+#lecture>h1{
+    text-align: center;
+}
+.titleoflecture{
+    color:red;
+    text-decoration: none;
+}
+.titleoflecture:hover{
+    text-decoration: underline;
+}
