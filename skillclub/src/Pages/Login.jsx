@@ -1,29 +1,63 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "../Styles/Login.css"
-import { Link } from 'react-router-dom'
-const Login = () => {
-  // const submitlogBtn=()=>{
+import { Link, Navigate } from 'react-router-dom'
+import { useState } from 'react'
+import { useContext } from 'react'
+import { AuthContext } from '../ContextApi/AuthContextProvider'
 
-  // }
+const Login = () => {
+    const {login,toggleLogin}=useContext(AuthContext);
+	const [username,setUser]=useState("");
+	const [password,setPassword]=useState("");
+	// const [userCheck,setuserCheck]=useState(true);
+
+  const setUsername=(e)=>{
+        //   console.log(e.target.value);
+		  setUser(e.target.value);
+  }
+  const userPassword=(e)=>{
+	  setPassword(e.target.value);
+  }
+  useEffect(()=>{
+       console.log(username);
+	   console.log(password)
+  },[username,password]);
+   
+  const userSignIn=async(e)=>{
+	e.preventDefault();
+	
+	    try{
+			let res=await fetch(`https://skillclubserverdata.onrender.com/users`);
+			let data=await res.json();
+			// setuserCheck(true);
+			console.log(toggleLogin("true"))
+		}catch(err){
+			console.log(err);
+		}
+  }
+  useEffect(()=>{
+console.log(login)
+  },[login]);
   return (
     <>
-    <div className='main'>
+{
+	!login&& <div className='main'>
   
     <div class="form-container">
 	<p class="title" style={{color:"white"}}>Login</p>
 	<form class="form">
 		<div class="input-group">
 			<label for="username">Username</label>
-			<input type="text" name="username" id="username" placeholder=""/>
+			<input type="text" name="username" id="username" placeholder="" onChange={setUsername}/>
 		</div>
 		<div class="input-group">
 			<label for="password">Password</label>
-			<input type="password" name="password" id="password" placeholder=""/>
+			<input type="password" name="password" id="password" placeholder="" onChange={userPassword}/>
 			<div class="forgot">
 			Forgot Password ?
 			</div>
 		</div>
-		<button class="sign">Sign in</button>
+		<button class="sign" onClick={userSignIn}>Sign in</button>
 	</form>
 	<div class="social-message">
 		<div class="line"></div>
@@ -55,7 +89,8 @@ const Login = () => {
       <div className='loginImage'>
         <img src="https://i.pinimg.com/564x/20/95/46/209546ee57f14191722c48716595903a.jpg" alt="loginImage" />
       </div>
-    </div>
+    </div>||<Navigate to="/"/>
+}
     </> )
 }
 

@@ -12,7 +12,7 @@ const Signup = () => {
     <p class="message">Signup now and get full access to our app. </p>
         {/* <div class="flex"> */}
         <label>
-            <input required="" placeholder="" type="text" class="input"/>
+            <input required="" placeholder="" type="text" class="input" />
             <span>User name</span>
         </label>
 
