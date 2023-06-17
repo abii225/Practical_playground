@@ -7,6 +7,7 @@
     padding: 20px;
     border-radius: 20px;
     position: relative;
+    margin:auto;
   }
   
   .title {
@@ -130,10 +131,7 @@
   }
   #signupMain{
     /* border:1px solid red; */
-    width:80%;
-    display:flex;
-    justify-content: space-around;
-    margin:auto;
+    width:40%;
     border-radius: 10px;
     box-shadow: 0 0 5px #aca1ff,
     0 0 20px #aca1ff,

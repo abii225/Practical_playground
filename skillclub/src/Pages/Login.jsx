@@ -86,9 +86,9 @@ console.log(login)
 	</p>
 </div>
 
-      <div className='loginImage'>
+      {/* <div className='loginImage'>
         <img src="https://i.pinimg.com/564x/20/95/46/209546ee57f14191722c48716595903a.jpg" alt="loginImage" />
-      </div>
+      </div> */}
     </div>||<Navigate to="/"/>
 }
     </> )

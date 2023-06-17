@@ -24,7 +24,7 @@ const Home = () => {
 <Link to="/login">Already have an account</Link>
  
      </div>
-     <img  id="banner"src="https://i.pinimg.com/564x/4a/d9/25/4ad925d4909f71b5be7449dfab752989.jpg"  alt="homepage" />
+     {/* <img  id="banner"src="https://i.pinimg.com/564x/4a/d9/25/4ad925d4909f71b5be7449dfab752989.jpg"  alt="homepage" /> */}
       </div>
       </> )
 }

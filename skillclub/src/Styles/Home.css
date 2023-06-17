@@ -142,5 +142,13 @@
     transition-property: width, left;
   }
 
-
+  body {
+    /* https://picsum.photos/3000/2000?image=1050 */
+    background-image: url(https://i.ibb.co/PC9dfKV/My-project-1-1.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: tahoma;
+    height: 100vh;
+  }
   
